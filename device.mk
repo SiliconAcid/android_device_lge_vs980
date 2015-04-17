@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+$(call inherit-product-if-exists, vendor/SiliconAcid/product.mk)
 $(call inherit-product-if-exists, vendor/lge/vs980/vs980-vendor.mk)
 $(call inherit-product, device/lge/g2-common/g2.mk)
 
@@ -42,3 +43,7 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
+
+# Synapse
+PRODUCT_PACKAGES += \
+    Synapse

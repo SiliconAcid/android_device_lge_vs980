@@ -45,5 +45,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
 
 # Synapse
-PRODUCT_PACKAGES += \
-    Synapse
+#PRODUCT_PACKAGES += \
+#    Synapse
